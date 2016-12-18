@@ -1,0 +1,64 @@
+.display-1{
+	font-family:verdana;
+	background-color:#71A8DE;
+}
+.btn{
+	background-color:#157FE9;
+	font-family: times;
+	font-size: 10px;
+}
+.row.thumb{
+	padding:0px;
+}
+.first{
+	background-color:#71A8DE;
+	padding: 0px;
+	margin:0px;
+}
+.jumbotron.background{
+	background-color:#71A8DE;
+}
+
+h5{
+	font-family: times;
+}
+.colorfour{
+	font-family: times;
+    color: #71A8DE
+}
+
+.img-circle{
+	display: inline-block;
+}
+.checkbox{
+	font-family: times;
+    color: #71A8DE;
+    font-weight:bold;
+ 	border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+cursor: pointer;
+position: fixed;
+}
+
+box{
+	cursor:pointer;
+	font-family:verdana;
+	display:inline-block;
+}
+.fir:hover{
+	color:rgba(117, 134, 235, 1);
+}
+
+.second:hover{
+	color:rgba(117, 235, 125, 1);
+
+}
+
+.third:hover{
+	color:rgba(36, 5, 5, 1);
+}
+
+.four:hover{
+	color:rgba(235, 117, 213, 1);
+}
