@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>How well do you know french music ?</title>
+		<link rel="stylesheet" type ="text/css" href ="assignmentFrenchMusic.css"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+
+<body>
+	<h1 class="display-1"><center> Quiz : How well do you know french music ? </center></h1>
+
+ <div class="row thumb">
+  <div class="col-md-12">
+    <div class="thumbnail">
+      <a href="gainsbourgif.gif">
+        <img src="images/gainsbourgif.gif" alt="Gainsbourg" style="width:50%">
+      </a>
+    </div>
+  </div>
+ </div>
+
+
+<div class="first">
+  <div class="jumbotron background">
+    <h1><center> Think you know French music ? Let's see! </center></h1> 
+  </div>
+</div>
+
+<div class="question">
+	<h4 class="colorfour">Question One : </h4>
+	<h5>Which French composer was so obsessed with an actress named Harriet Smithson that he wrote his « symphonie fantastique » about her ?</h5>
+
+	<input type="checkbox" id="georgeBizet" value="0" class="opera"/>
+	<label for="georgeBizet" >George Bizet</label><br>
+
+	<input type="checkbox" id="hectorBerlioz" value="4" class="opera"/>
+	<label for="hectorBerlioz">Hector Berlioz</label><br>
+
+	<input type="checkbox" id="camilleSaint" value="0" class="opera"/>
+	<label for="camilleSaint" >Camille Saint-Saens</label><br>
+
+	<input type="checkbox" id="fromentalHalevy" value="0" class="opera"/>
+	<label for="fromentalHalevy">Fromental Halevy</label><br>
+	<p align="center">
+	<input class="checkbox" type="submit" onclick="CheckedOpera()" >
+	</p>
+</div>
+
+<div class="question">
+	<h4 class="colorfour">Question Two : </h4>
+	<h5>Edith Piaf saw the life in … </h5>
+	  <input type="radio" name="radio" value="0" class="color">Red<br>
+	  <input type="radio" name="radio" value="0" class="color">Black<br>
+	  <input type="radio" name="radio" value="4" class="color">Pink <br>
+
+	  <p align="center">
+	  <input class="checkbox" type="submit" name="radio" onclick="checkedColor()"></p>   
+	   <div class="col-md-12">
+	    <div class="thumbnail">
+	      <a href="piaf.gif">
+	        <img src="images/piaf.gif" alt="Piaf" style="width:50%">
+	        </a>
+	    </div>
+       </div>
+</div>
+
+<div class="question">
+		<h4 class="colorfour">Question Tree :</h4>
+		<h5>« La bohême » is a song of ?</h5>
+	<div class="containerTwo">
+    	<div class="form-group">
+      	<label for="sel1">Select one answer:</label>
+      	<select class="form-control" id="sel1">
+        <option class="chanteur" value="0">Joe Dassin</option>
+        <option class="chanteur" value="4">Charlez Aznavour</option>
+        <option class="chanteur" value="0">Johnny Hallyday</option>
+        <option class="chanteur" value="0">Patrick Bruel</option>
+      </select>
+      <br>
+	<p align="center">      
+	<input type="submit" name="chanteur" onclick="SelectedChanteur()">  </p> 
+		</div>
+	</div>
+</div>
+
+<div class="question">
+		<h4 class="colorfour">Question Four :</h4>
+		<h5>A french song became famous in the world with the title « My way ». But what was the original french title ? </h5>
+
+	<a class="box">
+		<div class="fir">
+		<button class="myWay" id="buttonOne"> "Je ne regrette rien"
+		</button>
+		</div>
+
+		<div class="second">
+		<button class="myWay" id="buttonTwo"> "Je t'aime"
+		</button>
+		</div>
+
+		<div class="third">
+		<button class="myWay" id="buttonTree" onclick="AddFour()" value="4"> "Comme d'Habitude"
+		</button>
+		</div>
+
+		<div class="four">
+		<button class="myWay" id="buttonFour"> "Champs Elysée"
+		</button>
+		</a>
+</div>
+
+<iframe id="video1" width="560" height="315" src="https://www.youtube.com/embed/5AVOpNR2PIs" frameborder="0" allowfullscreen></iframe>
+
+	</a>
+</div>
+
+
+<div class="question">
+<div class="questionFive">
+		<h4 class="colorfour">Question Five :</h4>
+		<h5>Connect element together by entering the right number. </h5>
+	<ol>
+	<li>Je vous parle d'un temps que les moins de vingt ans ne peuvent pas connaître</li>
+	<li>À m'asseoir sur un banc cinq minutes avec toi. Et regarder les gens tant qu'y en a.
+	</li>
+	<li>Moi, je t'offrirai des perles de pluie venues de pays où il ne pleut pas.
+	</li>
+	<li>Il me dit des mots d'amour, des mots de tous les jours et ça me fait quelque chose.
+	</li>
+	</ol>
+
+	<ul class="reponse">
+	<li class ="answerOne">La vie en rose, interprétée par Edith Piaf (1947) <input type="number" max="4" min="1" class="chanson"></li>
+
+	<li class="answerTwo">Ne me quitte pas, interprétée par Jacques Brel (1959)<input type="number" max="4" min="1" class="chanson"></li>
+
+	<li class="answerTree" class="chanson">Mistral Gagnant, interprétée par Renaud (1985)<input type="number" max="4" min="1" class="chanson"></li>
+
+	<li class="answerFour" class="chanson">La Bohème, interprétée par Charles Aznavour (1965)<input type="number" max="4" min="1" class="chanson"></li>
+
+	<p align="center">
+	<input class="checkbox" type="submit" name="chanson" onclick="Selected();Result();"> </p>
+	</ul>
+	</div>
+	</div>
+
+
+</body>
+<script type="text/javascript" src="assignmentFrenchMusic.js"></script>
+</html>
+
+
+
